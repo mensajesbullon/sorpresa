@@ -1,44 +1,51 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SORPRESA!</title>
-
-    <link rel="stylesheet" href="css/main.css">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Mua?</title>
 </head>
-
 <body>
-    <main>
+    <script>
+        var audioedu = new Audio();
+        audioedu.src = "audiomarv.mp3";
+    </script>
 
-        <h1 id="mensaje"></h1>
-        <br>
-
-        <script>
-            var audioedu = new Audio();
-            audioedu.src = "01.mp3";
-        </script>
-
-        <button type="button" onmousedown="audioedu.play()">
-            <img id="cora" src="svg/cora.png" />
-        </button>
-
-        <br>
-        </br>
-        <div class="box">
-            <div class="cargando"></div>
+    <h1>¡Feliz San Valentín!</h1>
+    <div class="contenedor">
+        <div class="envoltura-sobre">
+            <div class="sobre">
+                <div class="carta">
+                    <div class="contenido" onmousedown="audioedu.pause();audioedu.currentTime=0;">
+                        <strong>Querida Marvi</strong>
+                        <p class="p1">
+                            Desde el primer día en que llegaste a mi vida, supe que eras especial. Hoy más que nunca, quiero reafirmarte lo que siento.
+                        </p>
+                        <p class="p2">
+                            Quiero reafirmarte que te amo en la distancia y en la cercanía, te amo por tu esencia única, por cada rasgo de tu personalidad y por la belleza que irradias. Te amo en cada instante, en cada forma y en cada latido de mi corazón.
+                        </p>
+                        <p class="p3">
+                            En este Día del Amor y la Amistad, quiero agradecerte por ser una persona tan maravillosa y a Dios por el regalo de tu existencia. Seguiré eligiéndote cada día, no solo porque eres especial, sino porque mi corazón así lo desea.
+                        </p>
+                        <p class="p4">
+                            - Edu
+                        </p>
+                        <p class="p4">
+                            PSDT. Perdón por esto Cheñoya
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="corazon" onmousedown="audioedu.play()"></div>
+            <div class="solapa-derecha"></div>
+            <div class="solapa-izquierda"></div>
         </div>
-
-        <br>
-
-        <h2 id="autor"></h2>
-
-    </main>
-
-    <script src="js/main.js"></script>
+    </div>
+    <!-- <script src="script_v2.js"></script> -->
+     <script src="script._v1.js"></script>
 </body>
-
 </html>
